@@ -1,0 +1,96 @@
+@import url("../Libs/Bootstrap.css");
+@import url("../Libs/animate.css");
+body {
+    direction: rtl;
+    background-color: #F0F1F3;
+    color: #828282;
+    line-height: 2;
+    font-family: "shabnam-light";
+}
+#page-nav {
+    height: 75px;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 2px 4px 0px;
+    background: white ;
+    margin-bottom: 35px ;
+    display: flex;
+}
+#page-nav .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+#page-nav .logo-container img {
+    height: 65px;
+}
+#page-nav ul {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+#page-nav ul li {
+    height: inherit;
+    margin-left: 30px ;
+}
+#page-nav ul li:last-child {
+    margin-left: unset;
+}
+#page-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 75px;
+    display: block;
+    height: inherit;
+    transition: color 250ms linear;
+    /*background: #5d75ea;*/
+}
+#page-nav ul li a:hover {
+    color: #5d75ea;
+}
+#page-nav ul li a i {
+    margin-left: 4px ;
+}
+.button {
+    color: white;
+    font-weight: 600;
+    transition: background-color 500ms linear , transform 250ms linear;
+    border: unset;
+    border-radius: 3px;
+    padding: 9px 18px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 15px 24px;
+}
+.button:hover {
+    cursor: pointer ;
+}
+#page-nav .action-container {
+    display: flex;
+    align-items: center;
+}
+#page-nav .action-container .button {
+    margin-left: 22px;
+}
+#page-nav .action-container .button:first-child {
+    background:#5d75ea;
+    margin-right: 15px ;
+}
+#page-nav .action-container .button:nth-child(2){
+    background: #e1578a;
+    margin-left: 15px;
+}
+#page-nav .action-container .button i {
+    font-size: 18px ;
+    margin-left: 4px ;
+    transform: translateY(2px);
+}
+.sticky {
+    animation-name: fadeInDown ;
+    position: fixed;
+    width: 100%;
+    left: 0;
+}
+.noneSticky {
+    animation-name: backInDown ;
+    animation-delay: 0 ;
+    animation-duration: 1000ms ;
+}
